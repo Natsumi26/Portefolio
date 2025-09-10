@@ -3,6 +3,8 @@ import NavBar from './components/NavBar'
 import MonProfil from './components/MonProfil'
 import AnimatedBackground from './components/AnimatedBackground'
 import Space from './components/space'
+import Portefolio from './Portefolio'
+import Cv from './components/Cv'
 import './App.css'
 
 function App() {
@@ -14,6 +16,10 @@ function App() {
       <NavBar className="relative z-20"/>
       <Space className="relative z-10"/>
       <MonProfil className="relative z-10"/>
+      <Space className="relative z-10"/>
+      <Portefolio className="relative z-10"/>
+      <Space className="relative z-10"/>
+      <Cv className="relative z-10"/>
       <Space className="relative z-10"/>
     </>
   )

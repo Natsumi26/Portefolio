@@ -35,9 +35,6 @@ export default function NavBar() {
           <a href="#profil" className="text-sm/6 font-semibold text-stone-50">
             Mon profil
           </a>
-          <a href="#competences" className="text-sm/6 font-semibold text-stone-50">
-            Mes compétences
-          </a>
           <a href="#projets" className="text-sm/6 font-semibold text-stone-50">
             Mes projets
           </a>
@@ -65,12 +62,6 @@ export default function NavBar() {
                   className=" inline-block rounded-lg px-3 py-2 text-base/7 font-semibold text-stone-50 hover:bg-gray-50"
                 >
                   Mon profil
-                </a>
-                <a
-                  href="#competences"
-                  className=" inline-block rounded-lg px-3 py-2 text-base/7 font-semibold text-stone-50 hover:bg-gray-50"
-                >
-                  Mes compétences
                 </a>
                 <a
                   href="#projets"
