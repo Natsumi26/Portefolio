@@ -16,7 +16,7 @@ export default function NavBar() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
-         <header className=" fixed top-0 left-0 w-full z-50">
+         <header className=" fixed top-0 left-0 w-full">
       <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
         </div>
@@ -35,6 +35,9 @@ export default function NavBar() {
           <a href="#profil" className="text-sm/6 font-semibold text-stone-50">
             Mon profil
           </a>
+          <a href="#competences" className="text-sm/6 font-semibold text-stone-50">
+            Mes compétences
+          </a>
           <a href="#projets" className="text-sm/6 font-semibold text-stone-50">
             Mes projets
           </a>
@@ -44,8 +47,8 @@ export default function NavBar() {
         </PopoverGroup>
       </nav>
       <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
-        <div className="fixed inset-0 z-50" />
-        <DialogPanel className="fixed top-0 left-0 z-50 w-full shadow-md overflow-y-auto bg-white p-6 sm:ring-1 sm:ring-gray-900/10">
+        <div className="fixed inset-0 " />
+        <DialogPanel className="fixed top-0 left-0 w-full shadow-md overflow-y-auto bg-white p-6 sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <button
               type="button"
@@ -62,6 +65,12 @@ export default function NavBar() {
                   className=" inline-block rounded-lg px-3 py-2 text-base/7 font-semibold text-stone-50 hover:bg-gray-50"
                 >
                   Mon profil
+                </a>
+                <a
+                  href="#competences"
+                  className=" inline-block rounded-lg px-3 py-2 text-base/7 font-semibold text-stone-50 hover:bg-gray-50"
+                >
+                  Mes compétences
                 </a>
                 <a
                   href="#projets"

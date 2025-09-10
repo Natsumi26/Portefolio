@@ -8,12 +8,12 @@ export default function AnimatedBackground() {
   }, []);
   const particlesLoaded = useCallback(async (container) => {
     // facultatif, juste pour debug
-    console.log(container);
+
   }, []);
 
   return (
-    <div className="fixed inset-0 z-0 w-full h-full bg-[#5B0000]">
       <Particles
+        className="absolute inset-0 w-full h-full"
         id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}
@@ -60,6 +60,5 @@ export default function AnimatedBackground() {
           background: { color: "#4B0000" },
         }}
       />
-    </div>
   );
 }
