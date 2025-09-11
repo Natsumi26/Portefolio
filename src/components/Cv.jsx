@@ -18,13 +18,13 @@ export default function Cv() {
     }, [isOpen]);
 
     return (
-        <section className="bg-gray-100 pb-10">
+        <section className=" w-[80%] mx-auto border-2 border-gray-300 p-8 rounded-xl shadow-md bg-gray-100 pb-10 stamp-shape">
             <div id="cv" className="text-center mx-full">
             <h2 className="text-3xl font-bold pt-10 mb-10">MON CV</h2>
             </div>
-            <section className=" relative cursor-pointer flex flex-col md:flex-row justify-center items-center gap-10 px-4 ">
+            <section className=" relative flex flex-col md:flex-row justify-center items-center gap-10 px-4 ">
                 <div onClick={() => setIsOpen(true)} className="overflow-hidden rounded-md border-2 border-double outline outline-offset-3 outline-red-500 w-[300px] md:w-[400px]">
-                    <img src={cvImage} alt="cv" className="w-auto max-h-[600px] transition-transform duration-300 ease-in-out hover:scale-105  " />
+                    <img src={cvImage} alt="cv" className="cursor-pointer w-auto max-h-[600px] transition-transform duration-300 ease-in-out hover:scale-105  " />
                 </div>
                 <div className="flex flex-col justify-center items-center space-y-4">
                     <div className="flex justify-center">

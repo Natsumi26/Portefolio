@@ -1,84 +1,35 @@
-'use client'
-
-import { useState } from 'react'
-import {
-  Dialog,
-  DialogPanel,
-  PopoverGroup,
-} from '@headlessui/react'
-import {
-  Bars3Icon,
-  XMarkIcon,
-} from '@heroicons/react/24/outline'
-
+import { useState } from "react";
 
 export default function NavBar() {
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
     return (
-         <header className=" fixed top-0 left-0 w-full">
-      <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
-        <div className="flex lg:flex-1">
-        </div>
-        <div className="flex lg:hidden">
-          <button
-            type="button"
-            onClick={() => setMobileMenuOpen(true)}
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-stone-50"
-          >
-            <span className="sr-only">Open main menu</span>
-            <Bars3Icon aria-hidden="true" className="size-6" />
-          </button>
-        </div>
-        <PopoverGroup className="hidden lg:flex lg:gap-x-12">
+      <>
+<nav className=" fixed w-full z-20 top-0 start-0 bg-red-900">
+  <div className="max-w-screen-xl flex flex-wrap items-center justify-end mx-auto p-4">
+    
+    <button onClick={() => setIsOpen(!isOpen)} type="button" className=" pointer-curser inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+        <span className="sr-only">Ouvrir le menu</span>
+        <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+    </button>
+    <div className={`${isOpen ? "block" : "hidden"} w-full md:block md:w-auto z-[9999]`}>
+      <ul className="font-medium text-white flex flex-col p-4 md:p-0 mt-4 rounded-lg bg-red-900 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-red-900">
+        <li>
+          <a href="#profil" className="block py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-300 md:p-0 dark:text-white md:dark:hover:text-gray-500 dark:hover:bg-red-300 dark:hover:text-white md:dark:hover:bg-transparent">Profil</a>
+        </li>
+        <li>
+          <a href="#projets" className="block py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-300 md:p-0 dark:text-white md:dark:hover:text-gray-500 dark:hover:bg-red-300 dark:hover:text-white md:dark:hover:bg-transparent">Projets</a>
+        </li>
+        <li>
+          <a href="#cv" className="block py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-300 md:p-0 dark:text-white md:dark:hover:text-gray-500 dark:hover:bg-red-300 dark:hover:text-white md:dark:hover:bg-transparent">CV</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-          <a href="#profil" className="text-sm/6 font-semibold text-stone-50">
-            Mon profil
-          </a>
-          <a href="#projets" className="text-sm/6 font-semibold text-stone-50">
-            Mes projets
-          </a>
-          <a href="#cv" className="text-sm/6 font-semibold text-stone-50">
-            Mon CV
-          </a>
-        </PopoverGroup>
-      </nav>
-      <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
-        <div className="fixed inset-0 " />
-        <DialogPanel className="fixed top-0 left-0 w-full shadow-md overflow-y-auto bg-white p-6 sm:ring-1 sm:ring-gray-900/10">
-          <div className="flex items-center justify-between">
-            <button
-              type="button"
-              onClick={() => setMobileMenuOpen(false)}
-              className="-m-2.5 rounded-md p-2.5 text-stone-50"
-            >
-              <span className="sr-only">Close menu</span>
-              <XMarkIcon aria-hidden="true" className="size-6" />
-            </button>
-          
-              <div className="flex flex-row space-x-6">
-                <a
-                  href="#profil"
-                  className=" inline-block rounded-lg px-3 py-2 text-base/7 font-semibold text-stone-50 hover:bg-gray-50"
-                >
-                  Mon profil
-                </a>
-                <a
-                  href="#projets"
-                  className=" inline-block rounded-lg px-3 py-2 text-base/7 font-semibold text-stone-50 hover:bg-gray-50"
-                >
-                  Mes projets
-                </a>
-                <a
-                  href="#cv"
-                  className=" inline-block rounded-lg px-3 py-2 text-base/7 font-semibold text-stone-50 hover:bg-gray-50"
-                >
-                  Mon CV
-                </a>
-              </div>
-              </div>
-        </DialogPanel>
-      </Dialog>
-    </header>
+      </>
   )
 }
