@@ -18,7 +18,7 @@ export default function Cv() {
     }, [isOpen]);
 
     return (
-        <section className=" w-[80%] mx-auto border-2 border-gray-300 p-8 rounded-xl shadow-md bg-gray-100 pb-10 stamp-shape">
+        <section className=" w-[80%] mx-auto border-6 border-double border-red-300 p-8 rounded-xl shadow-md bg-gray-100 pb-10">
             <div id="cv" className="text-center mx-full">
             <h2 className="text-3xl font-bold pt-10 mb-10">MON CV</h2>
             </div>

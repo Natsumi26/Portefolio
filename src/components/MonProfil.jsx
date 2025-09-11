@@ -8,7 +8,7 @@ export default function MonProfil() {
                 <h1 className="text-3xl font-bold">Marion REDON</h1>
                 <p className=" mt-2">Développeur Web</p>
             </div>
-            <div id="profil" className="w-[80%] mx-auto border-2 border-gray-300 p-8 rounded-xl shadow-md flex justify-center-safe flex-col mx-full bg-gray-100 stamp-shape">
+            <div id="profil" className="w-[80%] mx-auto border-6 border-double border-red-300 p-8 rounded-xl shadow-xl flex justify-center-safe flex-col mx-full bg-gray-100">
                 <h2 className="text-3xl font-bold mt-10 mb-4">À PROPOS DE MOI</h2>
                 <p className="mb-4 text-justify p-10">
                     Je m'appelle Marion REDON, <b>développeuse web junior</b>  et ancienne militaire — oui, tu as bien lu. J'ai troqué les rangers pour les balises &lt;section&gt;, et les missions de terrain pour les déploiements en production.<br/>
