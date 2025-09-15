@@ -15,7 +15,7 @@ export default function NavBar() {
         </svg>
     </button>
     <div className={`${isOpen ? "block" : "hidden"} w-full md:block md:w-auto z-[9999]`}>
-      <ul className="font-medium text-white flex flex-col p-4 md:p-0 mt-4 rounded-lg bg-red-900 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-red-900">
+      <ul className="font-lg text-white flex flex-col p-4 md:p-0 mt-4 rounded-lg bg-red-900 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-red-900">
         <li>
           <a href="#profil" className="block py-2 px-3 text-white rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-300 md:p-0 dark:text-white md:dark:hover:text-gray-500 dark:hover:bg-red-300 dark:hover:text-white md:dark:hover:bg-transparent">Profil</a>
         </li>

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import cvImage from "../assets/capture_cv.png";
+import cvImage from "../assets/cv/capture_cv.png";
 
 export default function Cv() {
     const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +18,7 @@ export default function Cv() {
     }, [isOpen]);
 
     return (
-        <section className=" w-[80%] mx-auto border-6 border-double border-red-300 p-8 rounded-xl shadow-md bg-gray-100 pb-10">
+        <section className=" w-[90%] mx-auto border-6 border-double border-red-300 p-8 rounded-xl shadow-md bg-gray-100 pb-10">
             <div id="cv" className="text-center mx-full">
             <h2 className="text-3xl font-bold pt-10 mb-10">MON CV</h2>
             </div>
