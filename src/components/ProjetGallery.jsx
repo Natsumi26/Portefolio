@@ -52,7 +52,7 @@ export default function ProjectGallery() {
   return (
     <section className="py-10">
       <h2 className="text-3xl font-bold text-center mb-10">MES PROJETS</h2>
-      <div className="ps-0 flex justify-center items-center gap-8 flex-wrap">
+      <div className="ps-0 flex justify-center items-center gap-8 flex-wrap ">
         
         {/* Flèche gauche */}
         <button
@@ -69,7 +69,7 @@ export default function ProjectGallery() {
             {/* Galerie scrollable */}
             <div
             ref={scrollRef}
-            className="flex gap-6 overflow-x-auto pr-4 pb-4 scroll-smooth"
+            className="flex gap-6 overflow-x-auto pb-4 scroll-smooth"
             >
                 <ProjectCard
                     title="Site pour développeur freelance"

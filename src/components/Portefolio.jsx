@@ -2,7 +2,7 @@ import ProjectGallery from "./ProjetGallery";
 
 export default function Portefolio() {
     return(
-        <section id="projets" className="w-[90%] sm:mx-0 mx-auto border-6 border-double border-red-300 p-8 rounded-xl shadow-md bg-gray-100">
+        <section id="projets" className="w-[90%] sm:mx-0 mx-auto border-6 border-double border-red-300 p-4 rounded-xl shadow-md bg-gray-100">
 
                 <ProjectGallery/>
            
