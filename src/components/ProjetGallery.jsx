@@ -4,12 +4,14 @@ import capture2 from "../assets/projets/resaSalles/site_reservation.jpg";
 import capture3 from "../assets/projets/CRUD_artist_Node.js/CRUD_artist.png"
 import capture4 from "../assets/projets/transport_toulouse/transport_toulouse.png"
 import capture5 from "../assets/projets/pizza/Pizza_REACT.png"
+import capture6 from "../assets/projets/devisFactures/devisFactures.png"
 import video1 from "../assets/projets/pdev/demo_pdev.mp4"
 import video2 from "../assets/projets/resaSalles/demo_resa_salles.mp4"
 import video3 from "../assets/projets/CRUD_artist_Node.js/demo_CRUD_artist.mp4"
 import video4 from "../assets/projets/transport_toulouse/demo_toulouse.mp4"
+import video5 from "../assets/projets/devisFactures/devisfactures.mp4"
 
-function ProjectCard({ title, image, video, techs, description, openModal}) {
+function ProjectCard({ title, image, video, techs, description, openModal, downloadLink}) {
 
   return (
     <div className="min-w-[300px] max-w-[300px] z-10 bg-white rounded-lg shadow-md overflow-hidden border border-gray-200 hover:shadow-xl transition">
@@ -17,11 +19,22 @@ function ProjectCard({ title, image, video, techs, description, openModal}) {
         <div className="p-4">
             <h3 className="text-lg font-bold mb-1">{title}</h3>
             <p className="text-sm text-gray-600 mb-2">{description}</p>
+            <div className="flex justify-between mb-1">
             {video && (
                 <button onClick={() => openModal(video)} className="cursor-pointer mt-2 text-sm text-red-700 underline">
                     Voir la démo vidéo
                 </button>
                 )}
+            {downloadLink && (
+            <a
+              href={downloadLink}
+              download
+              className="cursor-pointer mt-2 text-sm text-red-700 underline"
+            >
+              Télécharger (.exe)
+            </a>
+          )}
+          </div>
             <div className="text-xs text-red-800 font-semibold">
             {techs.join(" • ")}
             </div>
@@ -71,6 +84,15 @@ export default function ProjectGallery() {
             ref={scrollRef}
             className="flex gap-6 overflow-x-auto pb-4 scroll-smooth"
             >
+                <ProjectCard
+                    title="Logiciel de gestion devis/factures pour un auto-entrepreneur"
+                    image={capture6}
+                    video={video5}
+                    techs={["Electron", "Node.js"]}
+                    description="Electron, Sqlite3 en bdd, frontend HTML/CSS/Javascript et Bootstrap (Fullcalendar)"
+                    openModal={openModal}
+                    downloadLink="https://github.com/Natsumi26/my-devis-carreleur/releases/download/electron/Mes.DevisFactures.Setup.1.0.0.exe"
+                />
                 <ProjectCard
                     title="Site pour développeur freelance"
                     image={capture1}
