@@ -15,7 +15,7 @@ function ProjectCard({ title, image, video, techs, description, openModal, downl
 
   return (
     <div className="min-w-[300px] max-w-[300px] z-10 bg-white rounded-lg shadow-md overflow-hidden border border-gray-200 hover:shadow-xl transition">
-        <img src={image} alt={title} className="w-full h-48 object-cover" />
+        <img src={image} alt={title} style={{ cursor: video ? 'pointer' : 'default' }} className="w-full h-48 object-cover " onClick={() => video && openModal(video)} />
         <div className="p-4">
             <h3 className="text-lg font-bold mb-1">{title}</h3>
             <p className="text-sm text-gray-600 mb-2">{description}</p>
