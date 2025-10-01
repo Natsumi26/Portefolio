@@ -3,7 +3,9 @@ export default function Footer() {
       <footer className="bg-red-900 text-white py-6 mt-10">
         <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
           {/* Logo ou nom */}
-          <div className="text-lg font-bold">Marion REDON</div>
+          <div className="text-lg font-bold">Marion REDON
+          <p>Contact : <a href="mailto:marion.redon26@yahoo.fr" class="text-light text-decoration-underline">marion.redon26@yahoo.fr</a></p>
+          </div>
   
   
           {/* Réseaux sociaux */}
