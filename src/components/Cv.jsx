@@ -32,7 +32,7 @@ export default function Cv() {
                             <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
                         </svg>
                     </div>
-                        <a href="/REDON Marion CV_stage.pdf" download className="p-3 mt-2 bg-red-900 text-white rounded-md border-2 border-double outline outline-offset-3 outline-red-500 animate-pulse hover:scale-105 hover:bg-red-800 transition">
+                        <a href="/GROSFILLEY Marion CV_CDA.pdf" download className="p-3 mt-2 bg-red-900 text-white rounded-md border-2 border-double outline outline-offset-3 outline-red-500 animate-pulse hover:scale-105 hover:bg-red-800 transition">
                             Télécharger
                         </a>                
                     </div>

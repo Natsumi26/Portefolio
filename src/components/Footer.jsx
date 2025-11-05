@@ -3,8 +3,8 @@ export default function Footer() {
       <footer className="bg-red-900 text-white py-6 mt-10">
         <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
           {/* Logo ou nom */}
-          <div className="text-lg font-bold">Marion REDON
-          <p>Contact : <a href="mailto:marion.redon26@yahoo.fr" class="text-light text-decoration-underline">marion.redon26@yahoo.fr</a></p>
+          <div className="text-lg font-bold">Marion GROSFILLEY
+          <p>Contact : <a href="mailto:marion.redon26@yahoo.fr" className="text-light text-decoration-underline">marion.redon26@yahoo.fr</a></p>
           </div>
   
   
@@ -43,7 +43,7 @@ export default function Footer() {
           </div>
         </div>
         <p className="text-center text-xs mt-4 opacity-70">
-          © 2025 Marion REDON. Tous droits réservés.
+          © 2025 Marion GROSFILLEY. Tous droits réservés.
         </p>
       </footer>
     );
