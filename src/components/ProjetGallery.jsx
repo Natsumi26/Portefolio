@@ -5,11 +5,13 @@ import capture3 from "../assets/projets/CRUD_artist_Node.js/CRUD_artist.png"
 import capture4 from "../assets/projets/transport_toulouse/transport_toulouse.png"
 import capture5 from "../assets/projets/pizza/Pizza_REACT.png"
 import capture6 from "../assets/projets/devisFactures/devisFactures.png"
+import capture7 from "../assets/projets/resaoutdoor/calendar.png"
 import video1 from "../assets/projets/pdev/demo_pdev.mp4"
 import video2 from "../assets/projets/resaSalles/demo_resa_salles.mp4"
 import video3 from "../assets/projets/CRUD_artist_Node.js/demo_CRUD_artist.mp4"
 import video4 from "../assets/projets/transport_toulouse/demo_toulouse.mp4"
 import video5 from "../assets/projets/devisFactures/devisfactures.mp4"
+import video6 from "../assets/projets/resaoutdoor/resaoutdoor.mp4"
 
 function ProjectCard({ title, image, video, techs, description, openModal, downloadLink}) {
 
@@ -84,6 +86,14 @@ export default function ProjectGallery() {
             ref={scrollRef}
             className="flex gap-6 overflow-x-auto pb-4 scroll-smooth"
             >
+                <ProjectCard
+                    title="Application type Saas réservation activité outdoor"
+                    image={capture7}
+                    video={video6}
+                    techs={["PERN", "PostgresSQL", "Express", "React", "Node.js", "Prisma"]}
+                    description="Plateforme de gestion et de réservation outdoor de type Saas"
+                    openModal={openModal}
+                />
                 <ProjectCard
                     title="Logiciel de gestion devis/factures pour un auto-entrepreneur"
                     image={capture6}

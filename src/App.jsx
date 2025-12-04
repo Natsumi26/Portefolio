@@ -9,7 +9,6 @@ import Footer from './components/Footer'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -22,7 +21,7 @@ function App() {
       <Portefolio className="relative z-10"/>
       <Space className="relative z-10"/>
       <Cv className="relative z-10"/>
-      <Space className="relative z-10"/>.
+      <Space className="relative z-10"/>
       <Footer className="relative z-10"/>
     </>
   )
