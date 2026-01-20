@@ -3,14 +3,14 @@ import photoCV from "../assets/cv/photo_CV.jpg";
 export default function MonProfil() {
     return (
         <section className="flex justify-center text-center flex-col w-full h-auto ">
-            <div className=" flex flex-col content-center mt-10 mb-10 text-white ">
+            <div id="profil" className=" flex flex-col content-center mt-10 mb-10 text-white ">
                 <div>
                 <img src={photoCV} alt="photo" className="w-50 h-60 justify-self-center rounded-full"/>
                 </div>
                 <h1 className="text-3xl font-bold">Marion GROSFILLEY</h1>
                 <p className=" mt-2">Développeur Web</p>
             </div>
-            <div id="profil" className="mt-6 w-[90%] mx-auto border-6 border-double border-red-300 p-8 rounded-xl shadow-xl flex justify-center-safe flex-col mx-full bg-gray-100">
+            <div className="mt-6 w-[90%] mx-auto border-6 border-double border-red-300 p-8 rounded-xl shadow-xl flex justify-center-safe flex-col mx-full bg-gray-100">
                 <h2 className="text-3xl font-bold mt-10 mb-4">À PROPOS DE MOI</h2>
                 <p className="mb-4 text-justify ">
                     Je m'appelle Marion GROSFILLEY, <b>développeuse web junior</b>  et ancienne militaire — oui, tu as bien lu. J'ai troqué les rangers pour les balises &lt;section&gt;, et les missions de terrain pour les déploiements en production.<br/>
