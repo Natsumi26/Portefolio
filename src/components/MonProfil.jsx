@@ -5,7 +5,7 @@ export default function MonProfil() {
         <section className="flex justify-center text-center flex-col w-full h-auto ">
             <div id="profil" className=" flex flex-col content-center mt-10 mb-10 text-white ">
                 <div>
-                <img src={photoCV} alt="photo" className="w-50 h-60 justify-self-center rounded-full"/>
+                <img src={photoCV} alt="photo" width="600" height="600" className="w-50 h-60 justify-self-center rounded-full"/>
                 </div>
                 <h1 className="text-3xl font-bold">Marion GROSFILLEY</h1>
                 <p className=" mt-2">Développeur Web</p>
