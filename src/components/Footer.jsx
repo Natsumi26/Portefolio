@@ -15,6 +15,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-red-300 transition"
+              aria-label="Voir mon LinkedIn"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -30,6 +31,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-red-300 transition"
+              aria-label="Voir mon gitHub-"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

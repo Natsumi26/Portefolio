@@ -72,7 +72,7 @@ export default function ProjectGallery() {
         {/* Flèche gauche */}
         <button
           onClick={scrollLeft}
-          name="arrowLeft"
+          aria-label="back"
           className="left-2 top-1/2 transform -translate-y-1/2 bg-red-900 text-white p-2 rounded-full shadow hover:bg-red-800 z-15"
         >
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
@@ -147,7 +147,7 @@ export default function ProjectGallery() {
           {/* Flèche droite */}
           <button
           onClick={scrollRight}
-          name="arrowRight"
+          aria-label="next"
           className="right-2 top-1/2 transform -translate-y-1/2 bg-red-900 text-white p-2 rounded-full shadow hover:bg-red-800 z-10"
           >
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
