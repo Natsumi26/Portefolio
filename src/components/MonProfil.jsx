@@ -3,7 +3,7 @@ import photoCV from "../assets/cv/photo_CV.jpg";
 export default function MonProfil() {
     return (
         <section className="flex justify-center text-center flex-col w-full h-auto ">
-            <div id="profil" className=" flex flex-col items-center mt-10 mb-10 text-white ">
+            <div id="profil" className=" flex flex-col items-center mt-25 mb-10 text-white scroll-mt-24">
                 <div className="aspect-square w-50 justify-self-center">
                     <img src={photoCV} alt="photo" className="w-full h-full object-cover rounded-full"/>
                 </div>

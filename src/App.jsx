@@ -14,9 +14,7 @@ function App() {
     <>
     <AnimatedBackground className="absolute inset-0 z-0"/>
       <NavBar/>
-      <Space className="relative z-10"/>
       <MonProfil className="relative z-10"/>
-
       <Space className="relative z-10"/>
       <Portefolio className="relative z-10"/>
       <Space className="relative z-10"/>

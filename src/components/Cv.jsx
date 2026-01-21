@@ -18,9 +18,9 @@ export default function Cv() {
     }, [isOpen]);
 
     return (
-        <section id="cv" className=" w-[90%] mx-auto border-6 border-double border-red-300 p-8 rounded-xl shadow-md bg-gray-100 pb-10">
+        <section id="cv" className=" w-[90%] mx-auto border-6 border-double border-red-300 p-8 rounded-xl shadow-md bg-gray-100 pb-10 scroll-mt-30">
             <div className="text-center mx-full">
-            <h2 className="text-3xl font-bold pt-10 mb-10">MON CV</h2>
+                <h2 className="text-3xl font-bold pt-10 mb-10">MON CV</h2>
             </div>
             <section className=" relative flex flex-col md:flex-row justify-center items-center gap-10 px-4 ">
                 <div onClick={() => setIsOpen(true)} className="overflow-hidden rounded-md border-2 border-double outline outline-offset-3 outline-red-500 w-[300px] md:w-[400px]">
