@@ -20,7 +20,7 @@ export default function Cv() {
     return (
         <section id="cv" className=" w-[90%] mx-auto border-6 border-double border-[#D4B483] p-8 rounded-xl shadow-md bg-[#F8F5F0] pb-10 scroll-mt-30 transition-transform duration-300 hover:-translate-y-1 dark:bg-[#2a0808] dark:text-[#F5F5F5] dark:border-[#D4B483]">
             <div className="text-center mx-full">
-                <h2 className="text-3xl font-bold pt-10 mb-10">MON CV</h2>
+                <h2 className="text-3xl font-bold pt-10 mb-10 text-[#3a0d0d] dark:text-[#D4B483]">MON CV</h2>
             </div>
             <section className=" relative flex flex-col md:flex-row justify-center items-center gap-10 px-4 ">
                 <div onClick={() => setIsOpen(true)} className="overflow-hidden rounded-md border-2 border-double outline outline-offset-3 outline-red-500 w-[300px] md:w-[400px]">
@@ -28,7 +28,7 @@ export default function Cv() {
                 </div>
                 <div className="flex flex-col justify-center items-center space-y-4">
                     <div className="flex justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-8 animate-bounce text-red-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-8 animate-bounce text-[#3a0d0d] dark:text-[#D4B483]">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
                         </svg>
                     </div>

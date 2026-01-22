@@ -31,6 +31,7 @@
 }
 :root {
   --accent: #D4B483; /* or, beige chaud */
+  --accent2:#3a0d0d;
 }
 
 .accent-gradient {
@@ -39,8 +40,12 @@
   color: transparent;
 }
 
-h1, h2 {
+h1{
   color: var(--accent);
+  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+h2, h3{
   text-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 

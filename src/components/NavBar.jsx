@@ -10,6 +10,7 @@ export default function NavBar({ darkMode, setDarkMode }) {
         {/* LEFT SIDE — Dark Mode Button */}
         <div className="relative group">
         <button
+        aria-label="darkMode"
           onClick={() => setDarkMode(!darkMode)}
           className="
             w-14 h-7 flex items-center rounded-full

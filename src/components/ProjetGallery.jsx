@@ -66,7 +66,7 @@ export default function ProjectGallery() {
 
   return (
     <section className="py-10">
-      <h2 className="text-3xl font-bold text-center mb-10">MES PROJETS</h2>
+      <h2 className="text-3xl font-bold text-center mb-10 text-[#3a0d0d] dark:text-[#D4B483]">MES PROJETS</h2>
       <div className="ps-0 flex justify-center items-center gap-8 flex-wrap ">
         
         {/* Flèche gauche */}
