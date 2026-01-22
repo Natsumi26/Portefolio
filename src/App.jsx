@@ -9,20 +9,26 @@ import Footer from './components/Footer'
 import './App.css'
 
 function App() {
+    const [darkMode, setDarkMode] = useState(false);
 
   return (
-    <>
-    <AnimatedBackground className="absolute inset-0 z-0"/>
-      <NavBar/>
-      <MonProfil className="relative z-10"/>
-      <Space className="relative z-10"/>
-      <Portefolio className="relative z-10"/>
-      <Space className="relative z-10"/>
-      <Cv className="relative z-10"/>
-      <Space className="relative z-10"/>
-      <Footer className="relative z-10"/>
-    </>
-  )
+    <div className={darkMode ? "dark" : ""}>
+      
+        <AnimatedBackground className="absolute inset-0 z-0" darkMode={darkMode}/>
+          <div className='relative z-10'>
+            <NavBar darkMode={darkMode} setDarkMode={setDarkMode}/>
+            <MonProfil/>
+            <Space/>
+            <Portefolio/>
+            <Space/>
+            <Cv/>
+            <Space/>
+            <Footer/>
+          </div>
+        
+      </div>
+  );
+
 }
 
 export default App

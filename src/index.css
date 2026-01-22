@@ -1,3 +1,4 @@
+@config "../tailwind.config.js";
 @import "tailwindcss";
 @tailwind base;
 @tailwind components;
@@ -28,3 +29,48 @@
 @theme{
   --breakpoint-xxs: 20rem;
 }
+:root {
+  --accent: #D4B483; /* or, beige chaud */
+}
+
+.accent-gradient {
+  background: linear-gradient(90deg, #D4B483, #F2E9D0);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+h1, h2 {
+  color: var(--accent);
+  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+button {
+  background-color: var(--accent);
+  color: #3a0d0d; /* un bordeaux plus sombre */
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #c9a06d;
+  transition: 0.2s ease;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Macondo', sans-serif;
+}
+
+h1:hover {
+  transform: translateY(-2px);
+  transition: 0.2s ease;
+}
+
+body{
+  font-family: 'Work Sans', sans-serif;
+}
+

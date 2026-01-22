@@ -18,7 +18,7 @@ export default function Cv() {
     }, [isOpen]);
 
     return (
-        <section id="cv" className=" w-[90%] mx-auto border-6 border-double border-red-300 p-8 rounded-xl shadow-md bg-gray-100 pb-10 scroll-mt-30">
+        <section id="cv" className=" w-[90%] mx-auto border-6 border-double border-[#D4B483] p-8 rounded-xl shadow-md bg-[#F8F5F0] pb-10 scroll-mt-30 transition-transform duration-300 hover:-translate-y-1 dark:bg-[#2a0808] dark:text-[#F5F5F5] dark:border-[#D4B483]">
             <div className="text-center mx-full">
                 <h2 className="text-3xl font-bold pt-10 mb-10">MON CV</h2>
             </div>
@@ -32,7 +32,7 @@ export default function Cv() {
                             <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
                         </svg>
                     </div>
-                        <a href="/GROSFILLEY Marion CV_CDA.pdf" download className="p-3 mt-2 bg-red-900 text-white rounded-md border-2 border-double outline outline-offset-3 outline-red-500 animate-pulse hover:scale-105 hover:bg-red-800 transition">
+                        <a href="/GROSFILLEY Marion CV_CDA.pdf" download className="inline-block mt-4 px-6 py-3 rounded-md bg-[#D4B483] text-[#3a0d0d] font-semibold tracking-wide shadow-md transition-transform duration-300 hover:scale-105 hover:bg-[#c9a06d]">
                             Télécharger
                         </a>                
                     </div>

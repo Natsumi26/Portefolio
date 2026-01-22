@@ -2,7 +2,7 @@ import React, { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
 
-export default function AnimatedBackground() {
+export default function AnimatedBackground({ darkMode }) {
   const particlesInit = useCallback(async (engine) => {
     await loadSlim(engine);
   }, []);
@@ -21,7 +21,7 @@ export default function AnimatedBackground() {
           fullScreen: { enable: true, zIndex: -1 },
           particles: {
             number: { value: 30,density: { enable: true, area: 800 } },
-            color: { value: "#000000" },
+            color: { value: darkMode ? "#ffffff" : "#000000" },
             shape: { type: "circle" },
             opacity: {
               value: 0.2,
@@ -57,7 +57,7 @@ export default function AnimatedBackground() {
               }
           },
           detectRetina: true,
-          background: { color: "#4B0000" },
+          background: { color: darkMode ? "#0a0000" : "#4B0000" },
         }}
       />
   );

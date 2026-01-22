@@ -10,7 +10,7 @@ export default function MonProfil() {
                 <h1 className="text-3xl font-bold">Marion GROSFILLEY</h1>
                 <p className=" mt-2">Développeur Web</p>
             </div>
-            <div className="mt-6 w-[90%] mx-auto border-6 border-double border-red-300 p-8 rounded-xl shadow-xl flex justify-center-safe flex-col mx-full bg-gray-100">
+            <div className="mt-6 w-[90%] mx-auto border-6 border-double border-[#D4B483] p-8 rounded-xl shadow-xl flex justify-center-safe flex-col mx-full bg-[#F8F5F0] transition-transform duration-300 hover:-translate-y-1 dark:bg-[#2a0808] dark:text-[#F5F5F5] dark:border-[#D4B483]">
                 <h2 className="text-3xl font-bold mt-10 mb-4">À PROPOS DE MOI</h2>
                 <p className="mb-4 text-justify ">
                     Je m'appelle Marion GROSFILLEY, <b>développeuse web junior</b>  et ancienne militaire — oui, tu as bien lu. J'ai troqué les rangers pour les balises &lt;section&gt;, et les missions de terrain pour les déploiements en production.<br/>

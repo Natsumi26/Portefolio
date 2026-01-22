@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-      <footer className="bg-red-900 text-white py-6 mt-10">
+      <footer className="bg-red-900 text-white py-6 mt-10 dark:bg-[#120303] transition-colors duration-500">
         <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
           {/* Logo ou nom */}
           <div className="text-lg font-bold">Marion GROSFILLEY
