@@ -6,12 +6,14 @@ import capture4 from "../assets/projets/transport_toulouse/transport_toulouse.pn
 import capture5 from "../assets/projets/pizza/Pizza_REACT.png"
 import capture6 from "../assets/projets/devisFactures/devisFactures.png"
 import capture7 from "../assets/projets/resaoutdoor/calendar.png"
+import capture8 from "../assets/projets/Square_games/squareGame.jpg"
 import video1 from "../assets/projets/pdev/demo_pdev.mp4"
 import video2 from "../assets/projets/resaSalles/demo_resa_salles.mp4"
 import video3 from "../assets/projets/CRUD_artist_Node.js/demo_CRUD_artist.mp4"
 import video4 from "../assets/projets/transport_toulouse/demo_toulouse.mp4"
 import video5 from "../assets/projets/devisFactures/devisfactures.mp4"
 import video6 from "../assets/projets/resaoutdoor/resaoutdoor.mp4"
+import video7 from "../assets/projets/Square_games/squareGame.mp4"
 
 function ProjectCard({ title, image, video, techs, description, openModal, downloadLink}) {
 
@@ -98,10 +100,18 @@ export default function ProjectGallery() {
                     title="Logiciel de gestion devis/factures pour un auto-entrepreneur"
                     image={capture6}
                     video={video5}
-                    techs={["Electron", "Node.js"]}
+                    techs={["Electron", "Node.js", "SQLite"]}
                     description="Electron, Sqlite3 en bdd, frontend HTML/CSS/Javascript et Bootstrap (Fullcalendar)"
                     openModal={openModal}
                     downloadLink="https://github.com/Natsumi26/my-devis-carreleur/releases/download/electron/Mes.DevisFactures.Setup.1.0.0.exe"
+                />
+                <ProjectCard
+                    title="Premier projet Java SpringBoot : application de jeux en ligne"
+                    image={capture8}
+                    video={video7}
+                    techs={["Java maven", "Spring Boot", "MySQL", "Spring JPA", "Spring Security", "JWT", "Docker", "Thymeleaf", "WebSocket", "HTML/CSS/Javascript"]}
+                    description="Application de jeux en ligne avec micro-services (API-users, API-games et front)"
+                    openModal={openModal}
                 />
                 <ProjectCard
                     title="Site pour développeur freelance"
