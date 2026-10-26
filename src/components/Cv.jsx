@@ -18,7 +18,7 @@ export default function Cv() {
     }, [isOpen]);
 
     return (
-        <section id="cv" className=" w-[90%] mx-auto border-6 border-double border-[#D4B483] p-8 rounded-xl shadow-md bg-[#F8F5F0] pb-10 scroll-mt-30 transition-transform duration-300 hover:-translate-y-1 dark:bg-[#2a0808] dark:text-[#F5F5F5] dark:border-[#D4B483]">
+        <section id="cv" className=" w-[90%] mx-auto border-6 border-double border-[#D4B483] p-8 rounded-xl shadow-md bg-[#F8F5F0] pb-10 scroll-mt-30 dark:bg-[#2a0808] dark:text-[#F5F5F5] dark:border-[#D4B483]">
             <div className="text-center mx-full">
                 <h2 className="text-3xl font-bold pt-10 mb-10 text-[#3a0d0d] dark:text-[#D4B483]">MON CV</h2>
             </div>
@@ -40,7 +40,7 @@ export default function Cv() {
             {/* Modale */}
         {isOpen && (
             <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70" onClick={() => setIsOpen(false)}>
-                <div className="relative max-w-3xl w-full animate-scaleIn" onClick={(e) => e.stopPropagation()}>
+                <div className="relative max-w-3xl h-full animate-scaleIn" onClick={(e) => e.stopPropagation()}>
                     <button
                     onClick={() => setIsOpen(false)}
                     className="absolute top-2 right-2 text-white text-2xl"
